@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Четное-нечетное</title>
+</head>
+<body>
+{% set name = 'числа'%}
+<div>{{ name }}:</div>
+{%for item in range(number_1, number_2): %}
+ {% if item % 2 == 0 %}
+        <div>{{ item }} - чётное</div>
+ {% else %}
+       <div>{{ item }} - нечётное</div>
+ {% endif %}
+{% endfor %}
+</body>
+</html>
